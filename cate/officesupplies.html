@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stationery Shop - Navbar + Hero</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Font Awesome for social icons (free version) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/cate/cate.css">
+  </head>
+  <body>
+    <!-------------------------------------------- Navbar ----------------------------------------------->
+
+    <nav
+      class="navbar pt-1 navbar-expand-lg fixed-top bg-light bg-gradient bg-opacity-75"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: var(--primary)"
+          ><img src="/assist/cover.png" height="85" width="170" alt=""
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown mega-dropdown">
+              <a
+                class="nav-link fw-bold position-relative active"
+                href="#"
+                id="categoriesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CATEGORIES
+              </a>
+              <div
+                class="dropdown-menu mt-3 rounded-4 py-4 px-4"
+                aria-labelledby="categoriesDropdown"
+              >
+                <div class="row g-4">
+                  <!-- Left Column: Main Categories -->
+                  <div class="col-lg-4">
+                    <h6
+                      class="dropdown-header fs-5 fw-bold pt-2 pb-3 px-0 mb-3"
+                    >
+                      All Categories
+                    </h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/officesupplies.html"
+                          >Office Supplies</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/SchoolStationery.html"
+                          >School Stationery</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Arts&Crafts.html"
+                          >Arts & Crafts</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/FancyStationery.html"
+                          >Fancy Stationery</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/FancyDiary.html"
+                          >Fancy Diary</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/EducationalToys.html"
+                          >Educational Toys</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/FancyEnvelops.html"
+                          >Fancy Envelops</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="/cate/Novels.html"
+                          >Novels</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/SpiralNotebooks.html"
+                          >Spiral Notebooks</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Middle Column: Sub Categories 1 -->
+                  <div class="col-lg-4">
+                    <h6
+                      class="dropdown-header fs-5 fw-bold pt-2 pb-3 px-0 mb-3"
+                    >
+                      Notebooks & Writing
+                    </h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#"
+                          >Notebooks & Planners</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#">Registers</a>
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#"
+                          >Pens / Highlighters</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#"
+                          >Parker / Cross / Sheaffer</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#">Pen</a>
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#">Stationery</a>
+                      </li>
+                    </ul>
+
+                    <h6
+                      class="dropdown-header fs-5 fw-bold pt-2 pb-3 px-0 mt-4 mb-3"
+                    >
+                      Other Essentials
+                    </h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#">Tapes</a>
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#"
+                          >Stapler / Punch Hole</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Right Column: Sub Categories 2 + Image -->
+                  <div class="col-lg-4">
+                    <h6
+                      class="dropdown-header fs-5 fw-bold pt-2 pb-3 px-0 mb-3"
+                    >
+                      Boards & More
+                    </h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#"
+                          >White Board / Notice Board</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#"
+                          >Globe / Magnifier</a
+                        >
+                      </li>
+                      <li class="mb-3">
+                        <a class="text-decoration-none" href="#">Envelops</a>
+                      </li>
+                    </ul>
+
+                    <!-- Optional: small product image -->
+                    <div class="mt-4 text-center d-none d-lg-block">
+                      <img
+                        src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Colorful Pens"
+                        class="img-fluid shadow-sm"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold position-relative" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold position-relative" href="/index.html">
+                HOME</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold position-relative" href="/about.html"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold position-relative" href="/contact.html"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a
+              href="#"
+              class="btn fw-bold btn-outline-primary rounded-pill px-4"
+              >Login <i class="bi bi-box-arrow-in-left ms-1"></i
+            ></a>
+            <a
+              href="#"
+              class="btn btn-primary rounded-pill fw-semibold py-2 px-4"
+              >(0) Cart <i class="bi bi-cart ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="cate-hero">
+      <!-- Background Image – یہ والا تمہارے جیسا border والا ہے -->
+      <div class="hero-img"></div>
+
+      <!-- Text Overlay -->
+      <div class="hero-overlay">
+        <h1 class="hero-title">Arts & Crafts</h1>
+        <p class="breadcrumb-custom">
+          <a href="#">Home</a> / <a href="#">Arts & Crafts</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="py-4 bg-white">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Sidebar Categories -->
+          <div class="col-lg-3">
+            <div class="mb-3 d-flex justify-content-between align-items-center">
+              <h5 class="mb-0 fw-bold">CATEGORIES</h5>
+              <div class="view-buttons btn-group btn-group-sm" role="group">
+                <button
+                  type="button"
+                  id="gridView"
+                  class="btn btn-outline-secondary active"
+                >
+                  ⁝⁝
+                </button>
+                <button
+                  type="button"
+                  id="listView"
+                  class="btn btn-outline-secondary"
+                >
+                  ☰
+                </button>
+              </div>
+            </div>
+
+            <div class="category-list">
+              <a href="officesupplies.html"><span>Office Supplies</span></a>
+              <a href="SchoolStationery.html"><span>School Stationery</span></a>
+              <a href="Arts&Crafts.html"><span>Arts & Crafts</span></a>
+              <a href="FancyStationery.html"><span>Fancy Stationery</span></a>
+              <a href="FancyDiary.html"><span>Fancy Diary</span></a>
+              <a href="EducationalToys.html"><span>Educational Toys</span></a>
+              <a href="FancyEnvelops.html"><span>Fancy Envelops</span></a>
+              <a href="Novels.html"><span>Novels</span></a>
+              <a href="Novels.html"><span>Spiral Notebooks</span></a>
+              <!-- Add more categories as needed -->
+            </div>
+          </div>
+
+          <!-- Products Area -->
+          <div class="col-lg-9">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h4 class="mb-0 fw-bold">Featured Products</h4>
+              <div>
+                <label class="me-2 fw-bold">SORT BY:</label>
+                <select
+                  class="form-select form-select-sm d-inline-block w-auto"
+                >
+                  <option selected>Featured</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                  <option>Newest</option>
+                  <option>Popularity</option>
+                </select>
+              </div>
+            </div>
+
+            <div
+              id="productContainer"
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+            >
+              <!-- Product 1 -->
+              <div class="col-md-4 product-item">
+                <div
+                  class="card product-card h-100 text-center position-relative"
+                >
+                  <span
+                    class="position-absolute top-0 start-0 badge bg-danger m-2"
+                    >SALE</span
+                  >
+                  <img
+                    src="/office/1.jpg"
+                    class="card-img-top product-img"
+                    alt="Water Bottle"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">Rubber Stamp PSD MockUp</h6>
+                    <div class="mb-1">
+                      <span class="price-original">Rs.485.00</span>
+                      <span class="price-sale ms-2">Rs.385.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="col-md-4 product-item">
+                <div class="card product-card h-100 text-center">
+                  <img
+                    src="/office/2.jpg"
+                    class="card-img-top product-img"
+                    alt="Color Markers"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">
+                      Scotch Desktop Tape Dispenser, Black, 2.7 in. x 2.7 in. x
+                      6.4 in., 1 Tape Dispenser
+                    </h6>
+                    <div class="mb-1">
+                      <span class="price-sale">Rs.895.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="col-md-4 product-item">
+                <div class="card product-card h-100 text-center">
+                  <img
+                    src="/office/3.jfif"
+                    class="card-img-top product-img"
+                    alt="Permanent Marker"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">
+                      Scissors Bulk - Thick Sharp Shears for Office
+                    </h6>
+                    <div class="mb-1">
+                      <span class="price-sale">Rs.270.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="col-md-4 product-item">
+                <div
+                  class="card product-card h-100 text-center position-relative"
+                >
+                  <img
+                    src="/office/4.jpg"
+                    class="card-img-top product-img"
+                    alt="Water Bottle"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">
+                      Colored Binder Clips Bulk, 4 Size Assortment Includes
+                      Large, Medium, Small, Mini Metal Clips
+                    </h6>
+                    <div class="mb-1">
+                      <span class="price-sale ms-2">Rs.299.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="col-md-4 product-item">
+                <div class="card product-card h-100 text-center">
+                  <img
+                    src="/office/5.jpg"
+                    class="card-img-top product-img"
+                    alt="Color Markers"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">Striped paper clips</h6>
+                    <div class="mb-1">
+                      <span class="price-sale">Rs.295.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product  6-->
+              <div class="col-md-4 product-item">
+                <div class="card product-card h-100 text-center">
+                  <img
+                    src="/office/6.jpg"
+                    class="card-img-top product-img"
+                    alt="Permanent Marker"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">
+                      BIC Brite Liner Grip Pastel Highlighter Set, Chisel Tip
+                      for Fine and Broad Lines, 12-Count Pack in Assorted Colors
+                    </h6>
+                    <div class="mb-1">
+                      <span class="price-sale">Rs.120.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 7 -->
+              <div class="col-md-4 product-item">
+                <div
+                  class="card product-card h-100 text-center position-relative"
+                >
+                  <img
+                    src="/office/7.jpg"
+                    class="card-img-top product-img"
+                    alt="Water Bottle"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">
+                      Dabo & Shobo Highlighters Set of 48,Colored Markers And
+                      Beautiful Combination Set Liquid Ink Fast Drying And Not
+                      Easy To Fade Are Suitable For Classroom, Office And Shop
+                      Short Style
+                    </h6>
+                    <div class="mb-1">
+                      <span class="price-sale ms-2">Rs.997.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 8 -->
+              <div class="col-md-4 product-item">
+                <div class="card product-card h-100 text-center">
+                  <img
+                    src="/office/8.jpg"
+                    class="card-img-top product-img"
+                    alt="Color Markers"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">
+                      Aesthetic Desk Accessories Set - A Complete Desktop
+                      Organizer Set For Women Enhances Any Office Decor - An
+                      Office Supplies Kit w Gold Finish incl. Pen Holder,
+                      Scissors, Stapler, Tape Dispenser & More
+                    </h6>
+                    <div class="mb-1">
+                      <span class="price-sale">Rs.2950.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 9 -->
+              <div class="col-md-4 product-item">
+                <div class="card product-card h-100 text-center">
+                  <img
+                    src="/office/9.jfif"
+                    class="card-img-top product-img"
+                    alt="Permanent Marker"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title mb-2">
+                      Mr. Pen- Sticky Notes, 3"x3", 12 Pads, Vintage Colors,
+                      Self-Stick Pads, Aesthetic, Colorful, Bulk, Stocky Notes
+                      for Bible Journaling
+                    </h6>
+                    <div class="mb-1">
+                      <span class="price-sale">Rs.199.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <footer>
+      <div class="container">
+        <div class="row g-5">
+          <!-- Brand + Description -->
+          <div class="col-lg-4 col-md-6">
+            <a class="navbar-brand" href="#" style="color: var(--primary)"
+              ><img src="/assist/cover.png" height="85" width="170" alt=""
+            /></a>
+            <h6 class="mb-4 opacity-85">
+              Premium digital solutions • Karachi based • Global reach<br />
+              Crafting experiences that matter since 2020.
+            </h6>
+
+            <!-- Social Icons -->
+            <div class="social-icons mt-4">
+              <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-2 col-md-6">
+            <h3 class="fw-semibold mb-4 text-primary">Quick Links</h3>
+            <ul class="list-unstyled ps-2">
+              <li><a href="/index.html" class="footer-link">Home</a></li>
+              <li><a href="/about.html" class="footer-link">About Us</a></li>
+              <li><a href="/product.html" class="footer-link">Services</a></li>
+              <li><a href="#" class="footer-link">Portfolio</a></li>
+              <li><a href="/contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3 col-md-6">
+            <h3 class="fw-semibold mb-4 text-primary">Our Services</h3>
+            <ul class="list-unstyled ps-2">
+              <li><a href="#" class="footer-link">Web Development</a></li>
+              <li><a href="#" class="footer-link">UI/UX Design</a></li>
+              <li><a href="#" class="footer-link">Mobile Apps</a></li>
+              <li><a href="#" class="footer-link">Digital Marketing</a></li>
+              <li><a href="#" class="footer-link">Branding</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-lg-3 col-md-6">
+            <h3 class="fw-semibold mb-4 text-primary">Get in Touch</h3>
+            <ul class="list-unstyled fs-6 ps-2">
+              <li class="mb-3">
+                <i class="bi bi-geo-alt"></i> Karachi, Pakistan
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-envelope"></i>
+                hello@yourbrand.com
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-telephone"></i> +92 321 1234567
+              </li>
+              <li><i class="bi bi-alarm"></i> Mon - Sat: 9AM - 7PM</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <!-- Copyright -->
+        <div class="row copyright text-center">
+          <div class="col-12">
+            © 2025 YourBrand. All rights reserved.
+            <span class="ms-2"
+              >Made with <i class="fas fa-heart text-danger"></i> in
+              Karachi</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Navbar scroll effect -->
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 80) {
+          navbar.classList.add("scrolled", "bg-white", "shadow-sm");
+        } else {
+          navbar.classList.remove("scrolled", "bg-white", "shadow-sm");
+        }
+      });
+
+      // ------------------------------------Jqurey-----------------------------------------------------
+
+      $(document).ready(function () {
+        // 🔥 VIP Hover Effect
+        $(".product-card").hover(
+          function () {
+            $(this).css({
+              transform: "translateY(-10px) scale(1.03)",
+              "box-shadow": "0 15px 35px rgba(0,0,0,0.2)",
+            });
+          },
+          function () {
+            $(this).css({
+              transform: "translateY(0) scale(1)",
+              "box-shadow": "0 5px 15px rgba(0,0,0,0.08)",
+            });
+          },
+        );
+      });
+
+      $(window).on("scroll", function () {
+        $(".product-card").each(function () {
+          var cardTop = $(this).offset().top;
+          var windowBottom = $(window).scrollTop() + $(window).height();
+
+          if (cardTop < windowBottom - 50) {
+            $(this).addClass("show");
+          }
+        });
+      });
+
+      $(".category-list a").click(function () {
+        $(".category-list a").removeClass("active-cat");
+        $(this).addClass("active-cat");
+      });
+
+      $(document).ready(function () {
+        $("#gridView").click(function () {
+          $("#productContainer").removeClass("list-view");
+
+          $("#gridView").addClass("btn-primary");
+          $("#listView").removeClass("btn-primary");
+        });
+
+        $("#listView").click(function () {
+          $("#productContainer").addClass("list-view");
+
+          $("#listView").addClass("btn-primary");
+          $("#gridView").removeClass("btn-primary");
+        });
+      });
+    </script>
+  </body>
+</html>
