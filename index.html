@@ -26,17 +26,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <!-------------------------------------------- Navbar ----------------------------------------------->
 
-   <nav
-      class="navbar pt-1 navbar-expand-lg fixed-top bg-light bg-gradient bg-opacity-75"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#" style="color: var(--primary)"
+        <a class="navbar-brand" href="/index.html" style="color: var(--primary)"
           ><img src="/assist/cover.png" height="85" width="170" alt=""
         /></a>
 
@@ -53,10 +53,10 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-lg-0">
             <li class="nav-item dropdown mega-dropdown">
               <a
-                class="nav-link fw-bold position-relative active"
+                class="nav-link fw-bold position-relative"
                 href="#"
                 id="categoriesDropdown"
                 role="button"
@@ -66,7 +66,7 @@
                 CATEGORIES
               </a>
               <div
-                class="dropdown-menu mt-3 rounded-4 py-4 px-4"
+                class="dropdown-menu mt-1 rounded-4 py-4 px-4"
                 aria-labelledby="categoriesDropdown"
               >
                 <div class="row g-4">
@@ -151,28 +151,44 @@
                     </h6>
                     <ul class="list-unstyled">
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Notebooks&Planners.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Notebooks&Planners.html"
                           >Notebooks & Planners</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Registers.html">Registers</a>
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Registers.html"
+                          >Registers</a
+                        >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Pens&Highlighters.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Pens&Highlighters.html"
                           >Pens / Highlighters</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Parker&Cross&Sheaffer.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Parker&Cross&Sheaffer.html"
                           >Parker / Cross / Sheaffer</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Pen.html">Pen</a>
+                        <a class="text-decoration-none" href="/cate/Pen.html"
+                          >Pen</a
+                        >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Stationery.html">Stationery</a>
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Stationery.html"
+                          >Stationery</a
+                        >
                       </li>
                     </ul>
 
@@ -183,10 +199,14 @@
                     </h6>
                     <ul class="list-unstyled">
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Tapes.html">Tapes</a>
+                        <a class="text-decoration-none" href="/cate/Tapes.html"
+                          >Tapes</a
+                        >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Stapler&PunchHole.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Stapler&PunchHole.html"
                           >Stapler / Punch Hole</a
                         >
                       </li>
@@ -202,17 +222,25 @@
                     </h6>
                     <ul class="list-unstyled">
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/WhiteBoard&NoticeBoard.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/WhiteBoard&NoticeBoard.html"
                           >White Board / Notice Board</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Globe&Magnifier.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Globe&Magnifier.html"
                           >Globe / Magnifier</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Envelops.html">Envelops</a>
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Envelops.html"
+                          >Envelops</a
+                        >
                       </li>
                     </ul>
 
@@ -232,7 +260,10 @@
               <a class="nav-link fw-bold position-relative" href="#">|</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold position-relative" href="/index.html">
+              <a
+                class="nav-link fw-bold position-relative active"
+                href="/index.html"
+              >
                 HOME</a
               >
             </li>
@@ -312,7 +343,7 @@
 
     <!-- Brands SLIDER -->
 
-    <section class="brand-slider bg-light bg-gradient bg-opacity-75 py-1 mb-3">
+    <section class="brand-slider py-2 mb-3">
       <div class="overflow-hidden">
         <div class="slide-track d-flex">
           <!-- Brands (7 real + 7 same for seamless loop) -->
@@ -357,7 +388,7 @@
           >
             <img src="/assist/zebra-logo-removebg-preview.png" alt="zebra" />
           </div>
-
+          <div id="shop"></div>
           <!-- Duplicate for infinite loop -->
           <div
             class="slide mx-3 d-flex align-items-center justify-content-center"
@@ -405,7 +436,7 @@
     </section>
     <!----------------------------------- Product Cards ------------------------------->
 
-    <div class="sliders bg-white bg-gradient bg-opacity-75">
+    <div class="sliders">
       <h2 class="text-center mb-5 fw-bold text-decoration-underline">
         Featured Products
       </h2>
@@ -779,9 +810,10 @@
             <ul class="list-unstyled ps-2">
               <li><a href="/index.html" class="footer-link">Home</a></li>
               <li><a href="/about.html" class="footer-link">About Us</a></li>
-              <li><a href="/product.html" class="footer-link">Services</a></li>
-              <li><a href="#" class="footer-link">Portfolio</a></li>
-              <li><a href="/contact.html" class="footer-link">Contact</a></li>
+              <li>
+                <a href="/contact.html" class="footer-link">Contact Us</a>
+              </li>
+              <li><a href="#shop" class="footer-link">Shop</a></li>
             </ul>
           </div>
 
@@ -835,6 +867,91 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        /* ================= SMOOTH SCROLL ================= */
+        $('a[href^="#"]').on("click", function (e) {
+          e.preventDefault();
+          var target = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(target).offset().top - 90,
+            },
+            800,
+          );
+        });
+
+        /* ================= NAVBAR SCROLL ANIMATION ================= */
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 80) {
+            $(".navbar").addClass("scrolled");
+          } else {
+            $(".navbar").removeClass("scrolled");
+          }
+        });
+
+        /* ================= HERO TEXT TYPE EFFECT ================= */
+        let text = "Tools That Turn Ideas Into Reality";
+        let i = 0;
+        function typing() {
+          if (i < text.length) {
+            $(".hero span").text(text.substring(0, i + 1));
+            i++;
+            setTimeout(typing, 60);
+          }
+        }
+        $(".hero span").text("");
+        typing();
+
+        /* ================= CARD HOVER 3D EFFECT ================= */
+        // $(".card").mousemove(function (e) {
+        //   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+        //   let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+        //   $(this).css("transform", `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`);
+        // });
+
+        // $(".card").mouseleave(function () {
+        //   $(this).css("transform", "rotateY(0deg) rotateX(0deg)");
+        // });
+
+        /* ================= SCROLL REVEAL EFFECT ================= */
+        function reveal() {
+          $(".about-card, .card, .brand-slider").each(function () {
+            let top_of_element = $(this).offset().top;
+            let bottom_of_screen = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_screen > top_of_element + 100) {
+              $(this).css({
+                opacity: "1",
+                transform: "translateY(0)",
+              });
+            }
+          });
+        }
+
+        $(".about-card, .card, .brand-slider").css({
+          opacity: "0",
+          transform: "translateY(50px)",
+          transition: "all 0.8s ease",
+        });
+
+        $(window).on("scroll", reveal);
+        reveal();
+
+        /* ================= MEGA MENU HOVER (DESKTOP ONLY) ================= */
+        if ($(window).width() > 992) {
+          $(".mega-dropdown").hover(
+            function () {
+              $(this).find(".dropdown-menu").stop(true, true).slideDown(300);
+            },
+            function () {
+              $(this).find(".dropdown-menu").stop(true, true).slideUp(300);
+            },
+          );
+        }
+      });
+    </script>
 
     <!-- Navbar scroll effect -->
     <script>

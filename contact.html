@@ -26,17 +26,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <!-------------------------------------------- Navbar ----------------------------------------------->
 
-   <nav
-      class="navbar pt-1 navbar-expand-lg fixed-top bg-light bg-gradient bg-opacity-75"
-    >
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#" style="color: var(--primary)"
+        <a class="navbar-brand" href="/index.html" style="color: var(--primary)"
           ><img src="/assist/cover.png" height="85" width="170" alt=""
         /></a>
 
@@ -56,7 +56,7 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown mega-dropdown">
               <a
-                class="nav-link fw-bold position-relative active"
+                class="nav-link fw-bold position-relative"
                 href="#"
                 id="categoriesDropdown"
                 role="button"
@@ -66,7 +66,7 @@
                 CATEGORIES
               </a>
               <div
-                class="dropdown-menu mt-3 rounded-4 py-4 px-4"
+                class="dropdown-menu mt-1 rounded-4 py-4 px-4"
                 aria-labelledby="categoriesDropdown"
               >
                 <div class="row g-4">
@@ -151,28 +151,44 @@
                     </h6>
                     <ul class="list-unstyled">
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Notebooks&Planners.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Notebooks&Planners.html"
                           >Notebooks & Planners</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Registers.html">Registers</a>
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Registers.html"
+                          >Registers</a
+                        >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Pens&Highlighters.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Pens&Highlighters.html"
                           >Pens / Highlighters</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Parker&Cross&Sheaffer.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Parker&Cross&Sheaffer.html"
                           >Parker / Cross / Sheaffer</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Pen.html">Pen</a>
+                        <a class="text-decoration-none" href="/cate/Pen.html"
+                          >Pen</a
+                        >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Stationery.html">Stationery</a>
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Stationery.html"
+                          >Stationery</a
+                        >
                       </li>
                     </ul>
 
@@ -183,10 +199,14 @@
                     </h6>
                     <ul class="list-unstyled">
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Tapes.html">Tapes</a>
+                        <a class="text-decoration-none" href="/cate/Tapes.html"
+                          >Tapes</a
+                        >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Stapler&PunchHole.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Stapler&PunchHole.html"
                           >Stapler / Punch Hole</a
                         >
                       </li>
@@ -202,17 +222,25 @@
                     </h6>
                     <ul class="list-unstyled">
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/WhiteBoard&NoticeBoard.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/WhiteBoard&NoticeBoard.html"
                           >White Board / Notice Board</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Globe&Magnifier.html"
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Globe&Magnifier.html"
                           >Globe / Magnifier</a
                         >
                       </li>
                       <li class="mb-3">
-                        <a class="text-decoration-none" href="/cate/Envelops.html">Envelops</a>
+                        <a
+                          class="text-decoration-none"
+                          href="/cate/Envelops.html"
+                          >Envelops</a
+                        >
                       </li>
                     </ul>
 
@@ -232,7 +260,10 @@
               <a class="nav-link fw-bold position-relative" href="#">|</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold position-relative" href="/index.html">
+              <a
+                class="nav-link fw-bold position-relative "
+                href="/index.html"
+              >
                 HOME</a
               >
             </li>
@@ -243,7 +274,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold position-relative" href="/contact.html"
+              <a class="nav-link fw-bold position-relative active" href="/contact.html"
                 >CONTACT US</a
               >
             </li>
@@ -389,6 +420,44 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        /* ================= SMOOTH SCROLL ================= */
+        $('a[href^="#"]').on("click", function (e) {
+          e.preventDefault();
+          var target = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(target).offset().top - 90,
+            },
+            800,
+          );
+        });
+
+        /* ================= NAVBAR SCROLL ANIMATION ================= */
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 80) {
+            $(".navbar").addClass("scrolled");
+          } else {
+            $(".navbar").removeClass("scrolled");
+          }
+        });
+
+    
+
+        /* ================= MEGA MENU HOVER (DESKTOP ONLY) ================= */
+        if ($(window).width() > 992) {
+          $(".mega-dropdown").hover(
+            function () {
+              $(this).find(".dropdown-menu").stop(true, true).slideDown(300);
+            },
+            function () {
+              $(this).find(".dropdown-menu").stop(true, true).slideUp(300);
+            },
+          );
+        }
+      });
+    </script>
 
     <!-- Navbar scroll effect -->
     <script>
