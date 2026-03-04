@@ -28,27 +28,12 @@
     />
 
     <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/cate/cate.css" />
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-      body {
-        background-color: #e0f2fe;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .card {
-        border: none;
-        transition: transform 0.3s;
-      }
-      .hover-effect {
-        cursor: pointer;
-      }
-      .about-cont {
-        background-color: rgba(255, 255, 255, 0.671) !important;
-        backdrop-filter: blur(12px);
-      }
-    </style>
   </head>
   <body>
     <!-------------------------------------------- Navbar ----------------------------------------------->
@@ -287,14 +272,14 @@
             </li>
 
             <li class="nav-item">
-              <a
-                class="nav-link fw-bold position-relative active"
-                href="/about.html"
+              <a class="nav-link fw-bold position-relative" href="/about.html"
                 >ABOUT US</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold position-relative" href="/contact.html"
+              <a
+                class="nav-link fw-bold position-relative "
+                href="/contact.html"
                 >CONTACT US</a
               >
             </li>
@@ -302,7 +287,7 @@
 
           <div class="d-flex align-items-center gap-3">
             <a
-              href="office/login.html"
+              href="/office/login.html"
               class="btn fw-bold btn-outline-primary rounded-pill px-4"
               >Login <i class="bi bi-box-arrow-in-left ms-1"></i
             ></a>
@@ -315,123 +300,147 @@
         </div>
       </div>
     </nav>
-    <section class="cate-hero">
-      <!-- Background Image – یہ والا تمہارے جیسا border والا ہے -->
-      <div class="hero-img"></div>
 
-      <!-- Text Overlay -->
-      <div class="hero-overlay">
-        <h1 class="hero-title">About Us</h1>
-      </div>
-    </section>
+    <!-- Section: Design Block -->
+    <section class="background-radial-gradient overflow-hidden">
+     
 
-    <section class="about-header text-center about-cont">
-      <div class="container my-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2 class="mb-4">ABOUT US</h2>
-            <p>
-              <strong>Universal Stationery</strong> pichle kai saalon se apne
-              customers ko behtareen quality ki office aur school supplies
-              faraham kar raha hai. Hamara maqsad sirf saaman bechna nahi, balki
-              aapke kaam ko asaan aur organize banana hai.
-            </p>
-            <p>
-              Premium pens se lekar advanced office equipment tak, hamare paas
-              har wo cheez maujood hai jo ek student ya professional ki zaroorat
-              hoti hai.
+      <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center mb-5">
+          <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+            <h1
+              class="my-5 display-5 fw-bold ls-tight"
+              style="color: hsl(218, 81%, 95%)"
+            >
+              Your trusted partner <br />
+              <span style="color: hsl(218, 81%, 75%)"
+                >in stationery solutions</span
+              >
+            </h1>
+            <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+              Universal Stationery delivers premium school and office supplies
+              with a focus on quality, affordability, and customer satisfaction.
+              We aim to make every workspace organized, creative, and
+              productive.
             </p>
           </div>
-          <div class="col-md-6">
-            <img
-              src="/assist/about.jpg"
-              alt="Stationery Items"
-              class="img-fluid rounded shadow hover-effect"
-            />
+
+          <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+            <div
+              id="radius-shape-1"
+              class="position-absolute rounded-circle shadow-5-strong"
+            ></div>
+            <div
+              id="radius-shape-2"
+              class="position-absolute shadow-5-strong"
+            ></div>
+
+            <div class="card bg-glass">
+              <div class="card-body px-4 py-5 px-md-5">
+                <form>
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="row">
+                    <h1 class="text-center mb-4 text-primary">SIGN UP</h1>
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input
+                          type="text"
+                          id="form3Example1"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form3Example1"
+                          >First name</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div data-mdb-input-init class="form-outline">
+                        <input
+                          type="text"
+                          id="form3Example2"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="form3Example2"
+                          >Last name</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="form3Example3"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form3Example3"
+                      >Email address</label
+                    >
+                  </div>
+
+                  <!-- Password input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="form3Example4"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="form3Example4"
+                      >Password</label
+                    >
+                  </div>
+
+                  <!-- Checkbox -->
+                  <div class="form-check d-flex justify-content-center mb-4">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      value=""
+                      id="form2Example33"
+                      checked
+                    />
+                    <label class="form-check-label" for="form2Example33">
+                      Subscribe to our newsletter
+                    </label>
+                  </div>
+
+                  <!-- Submit button -->
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">
+                      SIGN UP
+                    </button>
+                  </div>
+                  <p class="my-2   pb-lg-2" >Already have an account? <a href="#!"
+                      style="color: #393f81;">Join Here</a></p>
+
+                  <!-- Register buttons -->
+                  <div class="social-icons mt-4 text-center">
+                    <p>or sign up with:</p>
+                    <a href="#" target="_blank"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="bi bi-linkedin"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="bi bi-youtube"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="bi bi-whatsapp"></i
+                    ></a>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-
-        <hr class="my-5" />
-
-        <section class="container my-5">
-          <div class="text-center mb-4">
-            <h2 class="fw-bold">Meet Our Team</h2>
-            <p class="text-muted">The people behind Universal Stationery</p>
-          </div>
-
-          <div class="row g-4">
-            <!-- Member 1 -->
-            <div class="col-md-4">
-              <div class="card team-card shadow-sm p-3 text-center h-100">
-                <img
-                  src="/assist/mem-2.jpg"
-                  class="rounded-circle mx-auto mb-3"
-                  width="120"
-                  height="120"
-                />
-
-                <h5 class="fw-bold">Ali Raza</h5>
-                <p class="text-primary">Content & Quality Specialist</p>
-
-                <div class="team-details">
-                  <p class="text-muted">
-                    Manages website content, ensures accuracy, and tests all
-                    features across different devices to maintain high-quality
-                    performance.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Member 2 -->
-            <div class="col-md-4">
-              <div class="card team-card shadow-sm p-3 text-center h-100">
-                <img
-                  src="/assist/mem-1.jpg"
-                  class="rounded-circle mx-auto mb-3"
-                  width="120"
-                  height="120"
-                />
-
-                <h5 class="fw-bold">Muhammad Saad</h5>
-                <p class="text-primary">Front-End Developer</p>
-
-                <div class="team-details">
-                  <p class="text-muted">
-                    mplements the website’s functionality using HTML, CSS,
-                    Bootstrap, and jQuery, creating a responsive and interactive
-                    user experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Member 3 -->
-            <div class="col-md-4">
-              <div class="card team-card shadow-sm p-3 text-center h-100">
-                <img
-                  src="/assist/mem-3.jpg"
-                  class="rounded-circle mx-auto mb-3"
-                  width="120"
-                  height="120"
-                />
-
-                <h5 class="fw-bold">Muhammad Aqeeb</h5>
-                <p class="text-primary">Project Lead & UI/UX Designer</p>
-
-                <div class="team-details">
-                  <p class="text-muted">
-                    Oversees the overall design and structure of the website,
-                    ensuring an attractive and user-friendly interface for all
-                    visitors.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </section>
+    <!-- Section: Design Block -->
 
     <!-- ========================================================================= //FOOTER// =============================================================================== -->
     <footer>
@@ -535,38 +544,12 @@
       </div>
     </footer>
 
-
-
-
-
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    
-    <script>
-      $(document).ready(function () {
-        // Image par hover karne se thoda zoom effect
-        $(".hover-effect").hover(
-          function () {
-            $(this).css("transform", "scale(1.05)");
-            $(this).css("transition", "0.3s");
-          },
-          function () {
-            $(this).css("transform", "scale(1)");
-          },
-        );
-
-        // Cards par click karne se highlight effect
-        $(".card").click(function () {
-          $(this).toggleClass("bg-light border-primary");
-        });
-      });
-    </script>
-
 
     <!-- Navbar scroll effect -->
     <script>

@@ -32,145 +32,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      body {
-        background-color: #f4f7f6;
-        font-family: "Segoe UI", sans-serif;
-      }
-      .contact-container {
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-      .card {
-        border: none;
-        border-radius: 15px;
-        overflow: hidden;
-      }
-      .btn-primary {
-        --primary: #6366f1;
-        --primary-dark: #4f46e5;
-        --dark: #0f172a;
-      }
-      .btn-primary:hover {
-        background-color: #002752;
-      }
-      .bg-primary {
-  background: linear-gradient(135deg, #0d6efd, #4f46e5) !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.bg-primary::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
-  top: -50px;
-  right: -50px;
-}
-.custom-input {
-  border-radius: 12px;
-  padding: 14px;
-  border: 1px solid #e5e7eb;
-  background: rgba(255,255,255,0.9);
-  transition: all 0.3s ease;
-}
-
-.custom-input:focus {
-  border-color: #4f46e5;
-  box-shadow: 0 0 15px rgba(79,70,229,0.3);
-  transform: scale(1.02);
-}
-      .map-container {
-        min-height: 400px;
-        height: 100%;
-        border-radius: 15px;
-        overflow: hidden;
-      }
-      .map-card {
-  border: 5px solid white;
-  transition: 0.4s;
-}
-
-.map-card:hover {
-  transform: scale(1.02);
-}
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-        min-height: 400px;
-      }
-      .hero-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        filter: brightness(0.75);
-        background-image: url(/office/image.jpg);
-        background-size: cover;
-      }
-      .contact-box {
-        transition: 0.3s;
-      }
-
-      .contact-box:hover {
-        transform: translateY(-5px);
-      }
-
-     .custom-input {
-  border-radius: 12px;
-  padding: 14px;
-  border: 1px solid #e5e7eb;
-  background: rgba(255,255,255,0.9);
-  transition: all 0.3s ease;
-}
-
-.custom-input:focus {
-  border-color: #4f46e5;
-  box-shadow: 0 0 15px rgba(79,70,229,0.3);
-  transform: scale(1.02);
-}
-
-      .custom-btn {
-  border-radius: 50px;
-  padding: 12px;
-  font-weight: 600;
-  background: linear-gradient(135deg, #0d6efd, #4f46e5);
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.custom-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(79,70,229,0.4);
-}
-      .sd-frm {
-        background-color: rgba(255, 255, 255, 0.671) !important;
-        backdrop-filter: blur(12px);
-      }
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-        min-height: 400px;
-        filter: grayscale(20%) contrast(105%);
-        transition: 0.4s;
-      }
-
-      iframe:hover {
-        filter: grayscale(0%) contrast(110%);
-      }
-      .contact-cont {
-   background-color: rgba(255, 255, 255, 0.671) !important;
-        backdrop-filter: blur(12px);
-  padding: 60px 30px;
-  /* border-radius: 20px; */
-  /* margin-top: 60px; */
-}
-    </style>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="/cate/cate.css" />
   </head>
   <body>
@@ -200,7 +63,7 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown mega-dropdown">
               <a
-                class="nav-link fw-bold position-relative "
+                class="nav-link fw-bold position-relative"
                 href="#"
                 id="categoriesDropdown"
                 role="button"
@@ -415,7 +278,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold position-relative active" href="/contact.html"
+              <a
+                class="nav-link fw-bold position-relative active"
+                href="/contact.html"
                 >CONTACT US</a
               >
             </li>
@@ -443,15 +308,11 @@
       <!-- Text Overlay -->
       <div class="hero-overlay">
         <h1 class="hero-title">Let's Connect With Us</h1>
-        <p class="breadcrumb-custom">
-          
-        </p>
+        <p class="breadcrumb-custom"></p>
       </div>
     </section>
 
-    <section class=" contact-cont">
-      
-
+    <section class="contact-cont">
       <div class="row shadow-lg rounded-4 overflow-hidden contact-box">
         <!-- Left Side Info -->
         <div class="col-md-5 bg-primary text-white p-5">
@@ -534,23 +395,7 @@
       </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Form Submission Logic using jQuery
-        $("#contactForm").on("submit", function (e) {
-          e.preventDefault();
-
-          // Simple animation and success message show
-          $(this).fadeOut(300, function () {
-            $("#successMsg").removeClass("d-none").hide().fadeIn();
-          });
-        });
-      });
-    </script>
-
-    
-<!-- ========================================================================= //FOOTER// =============================================================================== -->
+    <!-- ========================================================================= //FOOTER// =============================================================================== -->
     <footer>
       <div class="container">
         <div class="row g-5">
@@ -668,6 +513,20 @@
         } else {
           navbar.classList.remove("scrolled", "bg-white", "shadow-sm");
         }
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Form Submission Logic using jQuery
+        $("#contactForm").on("submit", function (e) {
+          e.preventDefault();
+
+          // Simple animation and success message show
+          $(this).fadeOut(300, function () {
+            $("#successMsg").removeClass("d-none").hide().fadeIn();
+          });
+        });
       });
     </script>
   </body>
