@@ -335,7 +335,7 @@
 
             <div class="card bg-glass">
               <div class="card-body px-4 py-5 px-md-5">
-                <form>
+                <form id="loginForm">
                   <!-- 2 column grid layout with text inputs for the first and last names -->
                   <div class="row">
                     <h1 class="text-center mb-4 text-primary">LOGIN</h1>
@@ -346,8 +346,10 @@
                   <div data-mdb-input-init class="form-outline mb-4">
                     <input
                       type="email"
-                      id="form3Example3"
+                      id="email"
+                      name="email" 
                       class="form-control"
+                      required
                     />
                     <label class="form-label" for="form3Example3"
                       >Email address</label
@@ -358,13 +360,16 @@
                   <div data-mdb-input-init class="form-outline mb-4">
                     <input
                       type="password"
-                      id="form3Example4"
+                      id="password"
+                      name="password"
                       class="form-control"
+                      required
                     />
                     <label class="form-label" for="form3Example4"
                       >Password</label
                     >
                   </div>
+                  <p id="errorMsg" class="text-danger text-center"></p>
 
                   <!-- Checkbox -->
                   <div class="form-check d-flex justify-content-center mb-4">
@@ -539,5 +544,38 @@
         }
       });
     </script>
+    <script>
+$(document).ready(function(){
+
+  $("#loginForm").submit(function(e){
+
+    let email = $("#email").val().trim();
+    let password = $("#password").val().trim();
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(email === "" || password === ""){
+      $("#errorMsg").text("All fields are required!");
+      e.preventDefault();
+      return;
+    }
+
+    if(!email.match(emailPattern)){
+      $("#errorMsg").text("Please enter a valid email address!");
+      e.preventDefault();
+      return;
+    }
+
+    if(password.length < 6){
+      $("#errorMsg").text("Password must be at least 6 characters!");
+      e.preventDefault();
+      return;
+    }
+
+    $("#errorMsg").text("");
+    alert("Login Successful!");
+  });
+
+});
+</script>
   </body>
 </html>
