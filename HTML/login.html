@@ -29,14 +29,13 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- ==================================== //CSS LINK// ================================================= -->
-     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/cate.css" />
-
   </head>
   <body>
     <!-- ============================================ //NAVBAR// ================================================= -->
 
-   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/index.html" style="color: var(--primary)"
           ><img src="/assist/cover.png" height="65" width="110" alt=""
@@ -263,7 +262,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link fw-bold position-relative active"
+                class="nav-link fw-bold position-relative "
                 href="/index.html"
               >
                 HOME</a
@@ -271,12 +270,16 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link fw-bold position-relative" href="/HTML/about.html"
+              <a
+                class="nav-link fw-bold position-relative"
+                href="/HTML/about.html"
                 >ABOUT US</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold position-relative" href="/HTML/contact.html"
+              <a
+                class="nav-link fw-bold position-relative"
+                href="/HTML/contact.html"
                 >CONTACT US</a
               >
             </li>
@@ -301,8 +304,6 @@
     <!-- ============================================ //LOGIN SECTION// ================================================= -->
 
     <section class="background-radial-gradient overflow-hidden">
-     
-
       <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
         <div class="row gx-lg-5 align-items-center mb-5">
           <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
@@ -339,38 +340,36 @@
                   <!-- 2 column grid layout with text inputs for the first and last names -->
                   <div class="row">
                     <h1 class="text-center mb-4 text-primary">LOGIN</h1>
-                    
-                    
 
-                  <!-- Email input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email" 
-                      class="form-control"
-                      required
-                    />
-                    <label class="form-label" for="form3Example3"
-                      >Email address</label
-                    >
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        required
+                      />
+                      <label class="form-label" for="form3Example3"
+                        >Email address</label
+                      >
+                    </div>
+
+                    <!-- Password input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        required
+                      />
+                      <label class="form-label" for="form3Example4"
+                        >Password</label
+                      >
+                    </div>
+                    <p id="errorMsg" class="text-danger text-center"></p>
                   </div>
-
-                  <!-- Password input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      class="form-control"
-                      required
-                    />
-                    <label class="form-label" for="form3Example4"
-                      >Password</label
-                    >
-                  </div>
-                  <p id="errorMsg" class="text-danger text-center"></p>
-
                   <!-- Checkbox -->
                   <div class="form-check d-flex justify-content-center mb-4">
                     <input
@@ -387,12 +386,12 @@
 
                   <!-- Submit button -->
                   <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">
-                      LOGIN
-                    </button>
+                    <button class="btn btn-primary" type="submit">LOGIN</button>
                   </div>
-                  <p class="my-2  pb-lg-2" >Don't have an account? <a href="#!"
-                      style="color: #393f81;">Register here</a></p>
+                  <p class="my-2 pb-lg-2">
+                    Don't have an account?
+                    <a href="#!" style="color: #393f81">Register here</a>
+                  </p>
 
                   <!-- Register buttons -->
                   <div class="social-icons mt-4 text-center">
@@ -420,7 +419,6 @@
         </div>
       </div>
     </section>
-    
 
     <!-- ============================================ //FOOTER// ================================================= -->
     <footer>
@@ -439,11 +437,11 @@
 
             <!-- Social Icons -->
             <div class="social-icons mt-4">
-              <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
-              <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
-              <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://pk.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+              <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
 
@@ -465,27 +463,27 @@
             <h3 class="fw-semibold mb-4 text-primary">Our Collections</h3>
             <ul class="list-unstyled ps-2">
               <li>
-                <a href="/cate/Notebooks&Planners.html" class="footer-link"
+                <a href="/HTML/Notebooks&Planners.html" class="footer-link"
                   >Notebooks & Planners</a
                 >
               </li>
               <li>
-                <a href="/cate/EducationalToys.html" class="footer-link"
+                <a href="/HTML/EducationalToys.html" class="footer-link"
                   >Educational Toys</a
                 >
               </li>
               <li>
-                <a href="/cate/FancyDiary.html" class="footer-link"
+                <a href="/HTML/FancyDiary.html" class="footer-link"
                   >Fancy Diary</a
                 >
               </li>
               <li>
-                <a href="/cate/officesupplies.html" class="footer-link"
+                <a href="/HTML/officesupplies.html" class="footer-link"
                   >Office Supplies</a
                 >
               </li>
               <li>
-                <a href="/cate/Arts&Crafts.html" class="footer-link"
+                <a href="/HTML/Arts&Crafts.html" class="footer-link"
                   >Arts & Crafts</a
                 >
               </li>
@@ -524,16 +522,14 @@
       </div>
     </footer>
 
-   
-     <!-- ============================================ //Bootstrap JS// ================================================= -->
+    <!-- ============================================ //Bootstrap JS// ================================================= -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
-    
-     <!-- ============================================ //Navbar scroll effect// ================================================= -->
+    <!-- ============================================ //Navbar scroll effect// ================================================= -->
     <script>
       window.addEventListener("scroll", function () {
         const navbar = document.querySelector(".navbar");
@@ -545,37 +541,34 @@
       });
     </script>
     <script>
-$(document).ready(function(){
+      $(document).ready(function () {
+        $("#loginForm").submit(function (e) {
+          let email = $("#email").val().trim();
+          let password = $("#password").val().trim();
+          let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-  $("#loginForm").submit(function(e){
+          if (email === "" || password === "") {
+            $("#errorMsg").text("All fields are required!");
+            e.preventDefault();
+            return;
+          }
 
-    let email = $("#email").val().trim();
-    let password = $("#password").val().trim();
-    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if (!email.match(emailPattern)) {
+            $("#errorMsg").text("Please enter a valid email address!");
+            e.preventDefault();
+            return;
+          }
 
-    if(email === "" || password === ""){
-      $("#errorMsg").text("All fields are required!");
-      e.preventDefault();
-      return;
-    }
+          if (password.length < 6) {
+            $("#errorMsg").text("Password must be at least 6 characters!");
+            e.preventDefault();
+            return;
+          }
 
-    if(!email.match(emailPattern)){
-      $("#errorMsg").text("Please enter a valid email address!");
-      e.preventDefault();
-      return;
-    }
-
-    if(password.length < 6){
-      $("#errorMsg").text("Password must be at least 6 characters!");
-      e.preventDefault();
-      return;
-    }
-
-    $("#errorMsg").text("");
-    alert("Login Successful!");
-  });
-
-});
-</script>
+          $("#errorMsg").text("");
+          alert("Login Successful!");
+        });
+      });
+    </script>
   </body>
 </html>
