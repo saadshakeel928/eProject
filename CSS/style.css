@@ -30,7 +30,7 @@ body {
   /* background-color: #f8fafc; */
   /* background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); */
   background-image: url(/assist/cover-bg.jpg);
-overflow-x: hidden;
+  overflow-x: hidden;
   color: var(--dark);
 }
 
@@ -579,7 +579,7 @@ footer {
       hsl(218, 41%, 35%) 15%,
       hsl(218, 41%, 30%) 35%,
       hsl(218, 41%, 20%) 75%,
-      
+
       transparent 100%
     ),
     radial-gradient(
@@ -587,7 +587,7 @@ footer {
       hsl(218, 41%, 45%) 15%,
       hsl(218, 41%, 30%) 35%,
       hsl(218, 41%, 20%) 75%,
-     
+
       transparent 100%
     );
 }
@@ -762,18 +762,58 @@ iframe:hover {
   backdrop-filter: blur(12px);
 }
 
-
 /* =============================================== ABOUT ==================================================== */
 
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+.hover-effect {
+  cursor: pointer;
+}
+.about-cont {
+  background-color: rgba(255, 255, 255, 0.671) !important;
+  backdrop-filter: blur(12px);
+}
 
-      .card {
-        border: none;
-        transition: transform 0.3s;
-      }
-      .hover-effect {
-        cursor: pointer;
-      }
-      .about-cont {
-        background-color: rgba(255, 255, 255, 0.671) !important;
-        backdrop-filter: blur(12px);
-      }
+/* <!-- =================================== cart css =======================================  --> */
+.cont-cart {
+  background-color: rgba(255, 255, 255, 0.671) !important;
+  backdrop-filter: blur(12px);
+}
+.cart-item {
+  border-bottom: 1px solid #eee;
+  padding: 1.25rem 0;
+}
+.cart-item:last-child {
+  border-bottom: none;
+}
+.product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.remove-btn {
+  color: #dc3545;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  text-decoration: underline;
+  color: #bb2d3b;
+}
+.cart-summary {
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+.btn-proceed {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+}
